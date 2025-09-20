@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Radley:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">N</div>
+      <h1>Reading List</h1>
+    </div>
+
+    <main>
+      <!-- Setup Section -->
+      <div id="setup" class="setup-section">
+        <h2>Setup Required</h2>
+        <input
+          type="password"
+          id="notionToken"
+          placeholder="Notion Integration Token"
+        />
+        <input type="text" id="databaseId" placeholder="Database ID" />
+        <button class="btn btn-primary" id="saveConfig">
+          Save Configuration
+        </button>
+      </div>
+
+      <!-- Main Section -->
+      <div id="main" class="hidden">
+        <div class="current-page">
+          <div class="page-title" id="pageTitle">Loading...</div>
+          <div class="page-url" id="pageUrl">Loading...</div>
+        </div>
+
+        <textarea id="notes" placeholder="Add notes (optional)..."></textarea>
+
+        <button class="btn btn-primary" id="saveArticle">
+          <span id="saveText">Save to Reading List</span>
+        </button>
+
+        <button class="btn btn-secondary" id="openSettings">Settings</button>
+      </div>
+
+      <div id="status" class="status hidden"></div>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
