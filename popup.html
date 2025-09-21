@@ -25,7 +25,20 @@
           id="notionToken"
           placeholder="Notion Integration Token"
         />
-        <input type="text" id="databaseId" placeholder="Database ID" />
+        <p class="info">
+          <span><img src="info.svg" width="10" /></span>
+          Get this from
+          <a href="https://notion.so/integrations">notion.so/integrations.</a>
+          Create a new integration if you haven't set one up already.
+        </p>
+        <input type="text" id="databaseId" placeholder="Data Source ID" />
+        <p class="info">
+          <span><img src="info.svg" width="10" /></span>
+          Copy the data source ID from your chosen Notion database. Ensure your
+          database has columns for 'Title', 'URL', 'Status', 'Deadline', and
+          'Added'. I recommend you just duplicate
+          <a href="https://notion.so/integrations">this Notion template.</a>
+        </p>
         <button class="btn btn-primary" id="saveConfig">
           Save Configuration
         </button>

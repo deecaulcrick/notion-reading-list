@@ -157,6 +157,14 @@ saveArticleBtn.addEventListener('click', async () => {
                                 }
                             ]
                         }
+                    },
+                    {
+                        object: 'block',
+                        type: "bookmark",
+                        bookmark: {
+                            caption: [],
+                            url: currentTab.url
+                        }
                     }
                 ] : []
             })
