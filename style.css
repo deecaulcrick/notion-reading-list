@@ -31,7 +31,7 @@ body {
     .header {
       display: flex;
       align-items: center;
-      margin-bottom: 20px;
+      
       padding: 20px;
       padding-bottom: 15px;
       border-bottom: 1px solid var(--line);
@@ -102,6 +102,9 @@ body {
         color: var(--grey-text);
         cursor: pointer;
     }
+    .info path {
+        stroke: var(--grey-text);
+    }
     
     .btn {
       width: 100%;
@@ -132,13 +135,14 @@ body {
     }
     
     .btn-secondary {
-      background: #f3f4f6;
-      color: #374151;
+      background: var(--text);
+      color: var(--bg);
       margin-top: 8px;
     }
     
     .btn-secondary:hover {
-      background: #e5e7eb;
+      background: var(--accent);
+        color: black;
     }
     
     .status {
